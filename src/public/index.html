@@ -1,0 +1,35 @@
+<!-- CodeDev - Isaac Martinez ;) <3 2022-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link tree - Isaac Martinez</title>
+    <link rel="stylesheet" type="text/css" href="./main.css"/>
+    <script src="./links.js"></script>
+      <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="card">
+                <h2>Bibliografía</h2>
+                <div class="links-container" id="links">
+                </div>
+                <div class="extra-mb"></div>
+            </div>
+            <span class="bottom-float-element">Isaac Martinezz &copy 2022</span>
+        </div>
+    </main>
+
+    <script>
+        let linksDoc = document.querySelector('#links');
+
+        links.forEach(link => {
+            linksDoc.innerHTML += `<a href="${link.link}" class="link-item" target="_blank">${link.title}</a>`
+        })
+    </script>
+</body>
+</html>
